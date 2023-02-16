@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="js/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container main-container">
+      <section class="left-container">
+        <div class="left-name">
+          <h4>Här kan du ange ditt namn.</h4>
+          <form>
+            <label for="name">Ditt namn</label>
+            <input type="text" name="" id="name" />
+            <button id="nameBtn">Skicka här.</button>
+          </form>
+          <p id="showUserName"></p>
+        </div>
+        <div class="left-items">
+          <div class="card userPick" style="width: 10rem">
+            <img src="img/rock.png" id="ROCK" class="card-img-top" alt="..." />
+            <div class="card-body" id="ROCK">
+              <p class="card-text" id="ROCK">Click to pick ROCK</p>
+            </div>
+          </div>
+          <div class="card userPick" style="width: 10rem">
+            <img
+              src="img/paper.png"
+              id="PAPER"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body" id="PAPER">
+              <p class="card-text" id="PAPER">Click to pick PAPER</p>
+            </div>
+          </div>
+          <div class="card userPick" style="width: 10rem">
+            <img
+              src="img/scissor.png"
+              id="SCISSOR"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body" id="SCISSOR">
+              <p class="card-text" id="SCISSOR">Click to pick SCISSOR</p>
+            </div>
+          </div>
+        </div>
+        <h2 id="leftPickPosition">Your pick:</h2>
+      </section>
+      <aside class="middle-container">
+        <div class="restart">
+          <h4 id="result-restart"></h4>
+        </div>
+        <div class="results">
+          <h5 id="result"></h5>
+          <h5>
+            Your points:
+            <span id="user-points">0</span>
+          </h5>
+          <h5 class="moveToLeft">
+            Comp points:
+            <span id="comp-points">0</span>
+          </h5>
+        </div>
+        <div id="topPlayersContainer">
+          <h4>Top 5 player scores</h4>
+          <ol></ol>
+        </div>
+      </aside>
+      <section class="right-container">
+        <div class="right-name">
+          <h4>I am just a computer</h4>
+        </div>
+        <div class="right-items">
+          <div class="card compPick" id="ROCK" style="width: 10rem">
+            <img src="img/rock.png" id="ROCK" class="card-img-top" alt="..." />
+            <div class="card-body" id="ROCK">
+              <p class="card-text" id="ROCK">Computer pick ROCK</p>
+            </div>
+          </div>
+          <div class="card compPick" style="width: 10rem">
+            <img src="img/paper.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Computer pick PAPER</p>
+            </div>
+          </div>
+          <div class="card compPick" style="width: 10rem">
+            <img src="img/scissor.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">Computer pick SCISSOR</p>
+            </div>
+          </div>
+        </div>
+        <h2 id="rightPickPosition">Computer pick: <span></span></h2>
+      </section>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+  </body>
+</html>
